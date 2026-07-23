@@ -36,10 +36,10 @@ export const ServicesView: React.FC<ServicesViewProps> = ({
       <section className="relative bg-navy-dark text-white py-16 border-b-4 border-gold-accent overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1920&q=80"
-            alt="Chartered Accounting Practice Services"
+            src="https://images.unsplash.com/photo-1610652492500-ded49ceeb378?auto=format&fit=crop&w=1920&q=80"
+            alt="Zimbabwean chartered accountant providing statutory services"
             referrerPolicy="no-referrer"
-            className="w-full h-full object-cover filter brightness-40"
+            className="w-full h-full object-cover object-top filter brightness-40"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-navy-dark via-navy-deep/90 to-navy-dark/80" />
         </div>

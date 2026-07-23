@@ -22,10 +22,10 @@ export const AboutView: React.FC<AboutViewProps> = ({
       <section className="relative bg-navy-dark text-white py-20 border-b-4 border-gold-accent overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1920&q=80"
-            alt="Chartered Accountants Harare Boardroom"
+            src="https://images.unsplash.com/photo-1610652492500-ded49ceeb378?auto=format&fit=crop&w=1920&q=80"
+            alt="Professional Zimbabwean chartered accountant"
             referrerPolicy="no-referrer"
-            className="w-full h-full object-cover filter brightness-50"
+            className="w-full h-full object-cover object-top filter brightness-50"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-navy-dark via-navy-deep/90 to-navy-dark/80" />
         </div>
@@ -95,10 +95,10 @@ export const AboutView: React.FC<AboutViewProps> = ({
           >
             <div className="relative h-56 overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1000&q=80"
-                alt="Executive Boardroom Consultation"
+                src="https://images.unsplash.com/photo-1686628269082-c92c3189903f?auto=format&fit=crop&w=1000&q=80"
+                alt="Arygyle accountant reviewing client financial documents"
                 referrerPolicy="no-referrer"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-deep via-transparent to-transparent p-4 flex items-end">
                 <span className="text-white font-bold text-sm">Harare Executive Office</span>
@@ -172,10 +172,10 @@ export const AboutView: React.FC<AboutViewProps> = ({
               
               <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-gold-accent shadow-md flex-shrink-0">
                 <img
-                  src="https://images.unsplash.com/photo-1531384441138-2736e62e0919?auto=format&fit=crop&w=400&q=80"
+                  src="https://images.unsplash.com/photo-1495603889488-42d1d66e5523?auto=format&fit=crop&w=400&q=80"
                   alt="Managing Partner Farai"
                   referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
 

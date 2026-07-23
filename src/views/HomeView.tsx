@@ -52,14 +52,13 @@ export const HomeView: React.FC<HomeViewProps> = ({
       {/* FULL PAGE CINEMATIC HERO SECTION WITH ANIMATED AURORA + IMAGE */}
       <section className="relative min-h-[92vh] flex items-center justify-center aurora-bg text-white overflow-hidden border-b-4 border-gold-accent py-24">
 
-        {/* Hero Background Image - Financial Ledgers, Accounting Reports & Tax Records */}
+        {/* Hero Background Image - client-provided photograph */}
         <div className="absolute inset-0 z-0">
           <motion.img
-            src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1920&q=80"
-            alt="Harare Chartered Accountants Financial Ledgers and Accounting Workspace"
-            referrerPolicy="no-referrer"
-            className="w-full h-full object-cover object-center filter brightness-[0.35] contrast-110"
-            initial={{ scale: 1.15 }}
+            src="/hero.jpg"
+            alt="Arygyle Chartered Accountants — professional financial advisory in Harare, Zimbabwe"
+            className="w-full h-full object-cover object-center filter brightness-[0.4] contrast-105"
+            initial={{ scale: 1.12 }}
             animate={{ scale: 1 }}
             transition={{ duration: 8, ease: 'easeOut' }}
           />
@@ -82,15 +81,6 @@ export const HomeView: React.FC<HomeViewProps> = ({
           animate="visible"
           variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.12 } } }}
         >
-          {/* Eyebrow badge */}
-          <motion.div
-            variants={{ hidden: { opacity: 0, y: 16 }, visible: { opacity: 1, y: 0 } }}
-            className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md text-gold-accent px-4 py-1.5 rounded-full text-xs font-semibold border border-gold-accent/40"
-          >
-            <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-            <span>Registered Chartered Accountancy Practice • Harare, Zimbabwe</span>
-          </motion.div>
-
           {/* Main Headline — word-by-word reveal */}
           <TextReveal
             as="h1"
@@ -267,9 +257,8 @@ export const HomeView: React.FC<HomeViewProps> = ({
             <div>
               <div className="relative h-56 overflow-hidden bg-slate-100">
                 <img
-                  src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80"
-                  alt="Official Company Registration Documents & Stamp"
-                  referrerPolicy="no-referrer"
+                  src="/card-formation.jpg"
+                  alt="Company formation and registration"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/70 via-transparent to-transparent" />
@@ -323,9 +312,8 @@ export const HomeView: React.FC<HomeViewProps> = ({
             <div>
               <div className="relative h-56 overflow-hidden bg-slate-100">
                 <img
-                  src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80"
-                  alt="ZIMRA Tax Clearance & Financial Ledger Audit"
-                  referrerPolicy="no-referrer"
+                  src="/card-tax.jpg"
+                  alt="ZIMRA tax clearance and compliance"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/70 via-transparent to-transparent" />
@@ -379,9 +367,8 @@ export const HomeView: React.FC<HomeViewProps> = ({
             <div>
               <div className="relative h-56 overflow-hidden bg-slate-100">
                 <img
-                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
-                  alt="Audit Advisory & Balance Sheet Financial Reports"
-                  referrerPolicy="no-referrer"
+                  src="/card-audit.jpg"
+                  alt="Retainers and statutory auditing services"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/70 via-transparent to-transparent" />
@@ -509,8 +496,8 @@ export const HomeView: React.FC<HomeViewProps> = ({
             <div className="lg:col-span-5 relative">
               <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-slate-200">
                 <img
-                  src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1000&q=80"
-                  alt="Arygyle Chartered Accountant Harare Boardroom & Accounting Office"
+                  src="https://images.unsplash.com/photo-1573496799515-eebbb63814f2?auto=format&fit=crop&w=1000&q=80"
+                  alt="Professional Zimbabwean accountant advising a client"
                   referrerPolicy="no-referrer"
                   className="w-full h-80 sm:h-96 object-cover object-center"
                 />
