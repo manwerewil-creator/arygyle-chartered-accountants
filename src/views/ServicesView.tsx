@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'motion/react';
 import { Page } from '../types';
 import { FIRM_DETAILS, SERVICES_LIST, FORMATION_OPTIONS, AUDIT_CATEGORIES } from '../data/firmData';
@@ -27,8 +27,6 @@ export const ServicesView: React.FC<ServicesViewProps> = ({
   setActivePage,
   onOpenInquiry
 }) => {
-  const [activeTab, setActiveTab] = useState<string>('company-formation');
-
   return (
     <div className="space-y-16 pb-16">
       
@@ -58,29 +56,6 @@ export const ServicesView: React.FC<ServicesViewProps> = ({
           <p className="text-gray-300 text-xs sm:text-sm max-w-2xl leading-relaxed">
             Detailed regulatory compliance procedures, required client document checklists, and fee structures for Zimbabwean companies and individuals.
           </p>
-        </div>
-      </section>
-
-      {/* Service Anchor Nav Tabs */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 sticky top-20 z-30 bg-slate-50/90 backdrop-blur-md py-3 rounded-2xl border border-gray-200 shadow-xs">
-        <div className="flex items-center gap-2 overflow-x-auto pb-1 px-2">
-          {SERVICES_LIST.map((srv) => (
-            <button
-              key={srv.id}
-              onClick={() => {
-                setActiveTab(srv.id);
-                const el = document.getElementById(srv.id);
-                if (el) el.scrollIntoView({ behavior: 'smooth' });
-              }}
-              className={`px-4 py-2 rounded-xl font-medium text-xs whitespace-nowrap transition-all ${
-                activeTab === srv.id
-                  ? 'bg-navy-deep text-white shadow-sm font-semibold'
-                  : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200'
-              }`}
-            >
-              {srv.title}
-            </button>
-          ))}
         </div>
       </section>
 
@@ -588,6 +563,106 @@ export const ServicesView: React.FC<ServicesViewProps> = ({
         </div>
 
       </section>
+
+      {/* ADDITIONAL SERVICE SECTIONS 07–10 */}
+      {[
+        {
+          id: 'tax-advisory',
+          line: 'Service Line 07 • Taxation',
+          title: 'Tax Advisory Services',
+          sub: 'Making tax simpler so you can focus on your core business while we handle the complicated work.',
+          cta: 'Get Tax Advice',
+          inquiry: 'Tax Advisory Services',
+          items: [
+            'Provide knowledge on the Zimbabwean tax system',
+            'Advise on your tax obligations',
+            'Tax-minimising strategies',
+            'Tax compliance audits of your accounting practices'
+          ]
+        },
+        {
+          id: 'transfer-pricing',
+          line: 'Service Line 08 • Taxation',
+          title: 'Transfer Pricing',
+          sub: 'Aligning practical transfer pricing with your business operations and resolving disputes efficiently.',
+          cta: 'Transfer Pricing Help',
+          inquiry: 'Transfer Pricing',
+          items: [
+            'Transfer pricing planning & documentation',
+            'Dispute avoidance & resolution',
+            'Advance Pricing Agreements (APAs)'
+          ]
+        },
+        {
+          id: 'company-secretarial',
+          line: 'Service Line 09 • Business Services Outsourcing',
+          title: 'Company Secretarial Services',
+          sub: 'Professional secretarial support under the Companies and Other Business Entities Act (Chapter 24:31).',
+          cta: 'Company Secretarial',
+          inquiry: 'Company Secretarial Services',
+          items: [
+            'Company formation',
+            'Company re-registration',
+            'Filing of statutory company returns with the Registrar of Companies',
+            'Change of company name, address or directorship',
+            'Converting PBC ↔ private limited ↔ public limited',
+            'Governance issues'
+          ]
+        },
+        {
+          id: 'bookkeeping-accounting',
+          line: 'Service Line 10 • Business Services Outsourcing',
+          title: 'Bookkeeping & Accounting Services',
+          sub: 'A flexible, fully outsourced accounting service managed by a dedicated professional team.',
+          cta: 'Outsource Accounting',
+          inquiry: 'Bookkeeping & Accounting Services',
+          items: [
+            'Preparation of management accounts',
+            'Preparation of financial statements',
+            'Bookkeeping services',
+            'Finance-function outsourcing (e.g. a resource in your finance department)',
+            'Set-up of accounting software, training & assistance',
+            'Preparation of business plans & cash-flow forecasts',
+            'Assisting with funding applications from banks & other firms',
+            'Performing stock counts for clients'
+          ]
+        }
+      ].map((s) => (
+        <section key={s.id} id={s.id} className="max-w-7xl mx-auto px-4 sm:px-6 scroll-mt-32">
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="bg-white rounded-2xl border-2 border-slate-200/90 border-t-4 border-t-gold-accent p-6 sm:p-8 shadow-md hover:shadow-2xl transition-all duration-300 space-y-6"
+          >
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-gray-200 pb-4">
+              <div>
+                <span className="text-xs font-bold uppercase tracking-wider text-gold-accent">{s.line}</span>
+                <h2 className="text-2xl font-extrabold text-navy-deep mt-1">{s.title}</h2>
+                <p className="text-xs text-gray-600 mt-1">{s.sub}</p>
+              </div>
+              <button
+                onClick={() => onOpenInquiry(s.inquiry)}
+                className="bg-navy-deep hover:bg-navy-dark text-white font-bold px-5 py-2.5 rounded-xl text-xs transition-colors shadow-sm flex-shrink-0"
+              >
+                {s.cta}
+              </button>
+            </div>
+
+            <div>
+              <h4 className="font-bold text-navy-deep text-xs uppercase tracking-wider mb-3">What we will do for you</h4>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-gray-700">
+                {s.items.map((it, i) => (
+                  <div key={i} className="flex items-start gap-2 p-3 bg-slate-50 rounded-xl border border-gray-200">
+                    <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>{it}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+        </section>
+      ))}
 
       {/* FINAL CTA */}
       <section className="bg-navy-deep text-white py-12 rounded-3xl max-w-7xl mx-auto px-6 text-center space-y-4 shadow-xl">

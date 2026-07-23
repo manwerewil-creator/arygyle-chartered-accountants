@@ -160,6 +160,61 @@ export const SERVICES_LIST: ServiceItem[] = [
       'Risk management & information systems audits'
     ],
     ctaText: 'Request Internal Audit'
+  },
+  {
+    id: 'tax-advisory',
+    title: 'Tax Advisory Services',
+    shortDesc: 'Practical guidance on the Zimbabwean tax system, your obligations, and tax-minimising strategies.',
+    fullDesc: 'Our tax advisory services make tax simpler, letting you focus on your core business while we handle the complicated work — advising on the Zimbabwean tax system, your obligations, tax-minimising strategies, and running tax compliance audits of your accounting practices.',
+    iconName: 'Calculator',
+    highlights: [
+      'Knowledge of the Zimbabwean tax system',
+      'Advice on your tax obligations',
+      'Tax-minimising strategies',
+      'Tax compliance audits of your practices'
+    ],
+    ctaText: 'Get Tax Advice'
+  },
+  {
+    id: 'transfer-pricing',
+    title: 'Transfer Pricing',
+    shortDesc: 'Align transfer pricing with your operations, document it defensibly, and resolve disputes efficiently.',
+    fullDesc: 'Our transfer pricing team helps companies reduce risk by aligning practical transfer pricing solutions with overall business operations, assisting with strategic documentation to support transfer pricing practices, and resolving disputes efficiently.',
+    iconName: 'TrendingUp',
+    highlights: [
+      'Transfer pricing planning & documentation',
+      'Dispute avoidance & resolution',
+      'Advance Pricing Agreements (APAs)'
+    ],
+    ctaText: 'Transfer Pricing Help'
+  },
+  {
+    id: 'company-secretarial',
+    title: 'Company Secretarial Services',
+    shortDesc: 'Statutory returns, changes, conversions and governance support under Chapter 24:31.',
+    fullDesc: 'Many companies lack a dedicated company secretary. We provide the professional guidance and support needed to comply with the Companies and Other Business Entities Act (Chapter 24:31) — from formation and re-registration to statutory returns, structural changes and governance.',
+    iconName: 'Building2',
+    highlights: [
+      'Company formation & re-registration',
+      'Filing statutory company returns with the Registrar',
+      'Change of name, address or directorship',
+      'PBC ↔ Private ↔ Public conversions & governance'
+    ],
+    ctaText: 'Company Secretarial'
+  },
+  {
+    id: 'bookkeeping-accounting',
+    title: 'Bookkeeping & Accounting Services',
+    shortDesc: 'Outsourced bookkeeping, management accounts, financial statements and finance-function support.',
+    fullDesc: 'A high-quality, flexible outsourced accounting service managed by a dedicated professional team. Through our network and technology, we support the critical area of finance so you always have an accurate, up-to-date picture of your company\'s financial situation.',
+    iconName: 'FileSpreadsheet',
+    highlights: [
+      'Management accounts & financial statements',
+      'Bookkeeping & finance-function outsourcing',
+      'Accounting software setup, training & assistance',
+      'Business plans, cash-flow forecasts, funding & stock counts'
+    ],
+    ctaText: 'Outsource Accounting'
   }
 ];
 
