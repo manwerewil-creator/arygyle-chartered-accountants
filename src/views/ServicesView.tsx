@@ -241,6 +241,17 @@ export const ServicesView: React.FC<ServicesViewProps> = ({
             </button>
           </div>
 
+          <div className="relative rounded-2xl overflow-hidden h-40 sm:h-52 border border-gray-200">
+            <img
+              src="https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1200&q=80"
+              alt="ZIMRA tax clearance documents and computation"
+              referrerPolicy="no-referrer"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/85 via-navy-deep/25 to-transparent" />
+            <span className="absolute bottom-3 left-4 text-white font-extrabold text-sm">ITF263 Tax Clearance Certificate</span>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             
             {/* Individual Requirements */}
@@ -326,6 +337,17 @@ export const ServicesView: React.FC<ServicesViewProps> = ({
             </button>
           </div>
 
+          <div className="relative rounded-2xl overflow-hidden h-40 sm:h-52 border border-gray-200">
+            <img
+              src="https://images.unsplash.com/photo-1626266061368-46a8f578ddd6?auto=format&fit=crop&w=1200&q=80"
+              alt="Accountant computing tax returns and managing ledgers"
+              referrerPolicy="no-referrer"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/85 via-navy-deep/25 to-transparent" />
+            <span className="absolute bottom-3 left-4 text-white font-extrabold text-sm">Ledger Management &amp; Return Computation</span>
+          </div>
+
           {/* 2022 ZIMRA Interfacing Warning Callout Box */}
           <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded-r-xl space-y-2">
             <div className="flex items-center gap-2 font-bold text-red-900 text-xs uppercase tracking-wider">
@@ -385,6 +407,17 @@ export const ServicesView: React.FC<ServicesViewProps> = ({
               <span>Setup Fiscalisation</span>
               <ArrowRight className="w-4 h-4" />
             </button>
+          </div>
+
+          <div className="relative rounded-2xl overflow-hidden h-40 sm:h-52 border border-gray-200">
+            <img
+              src="https://images.unsplash.com/photo-1654263937079-f63a3ea4d48b?auto=format&fit=crop&w=1200&q=80"
+              alt="Fiscal device and card payment terminal for VAT invoicing"
+              referrerPolicy="no-referrer"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/85 via-navy-deep/25 to-transparent" />
+            <span className="absolute bottom-3 left-4 text-white font-extrabold text-sm">Fiscal Device Interfacing &amp; VAT Invoicing</span>
           </div>
 
           {/* Threshold cards */}
@@ -450,6 +483,17 @@ export const ServicesView: React.FC<ServicesViewProps> = ({
             >
               Consult CGT Expert
             </button>
+          </div>
+
+          <div className="relative rounded-2xl overflow-hidden h-40 sm:h-52 border border-gray-200">
+            <img
+              src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80"
+              alt="Property and real estate disposal subject to capital gains tax"
+              referrerPolicy="no-referrer"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/85 via-navy-deep/25 to-transparent" />
+            <span className="absolute bottom-3 left-4 text-white font-extrabold text-sm">Property &amp; Asset Disposals</span>
           </div>
 
           {/* Before vs After comparison */}
