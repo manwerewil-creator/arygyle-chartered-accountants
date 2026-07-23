@@ -19,6 +19,13 @@ export const PricingView: React.FC<PricingViewProps> = ({
       
       {/* Header Banner */}
       <section className="aurora-bg text-white py-16 border-b-4 border-gold-accent relative overflow-hidden">
+        <img
+          src="https://images.unsplash.com/photo-1762884613665-43e760bb15b2?auto=format&fit=crop&w=1920&q=80"
+          alt="Transparent, affordable accounting fees"
+          referrerPolicy="no-referrer"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-dark/95 via-navy-deep/85 to-navy-dark/90" />
         <div className="absolute inset-0 opacity-[0.1] text-gold-accent dot-grid pointer-events-none" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 space-y-4 text-center max-w-3xl mx-auto relative z-10 animate-slideUp">
           <div className="inline-flex items-center gap-2 bg-white/10 text-gold-accent px-3 py-1 rounded-full text-xs font-semibold">
