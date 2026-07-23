@@ -22,12 +22,12 @@ export const AboutView: React.FC<AboutViewProps> = ({
       <section className="relative bg-navy-dark text-white py-20 border-b-4 border-gold-accent overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1610652492500-ded49ceeb378?auto=format&fit=crop&w=1920&q=80"
-            alt="Professional Zimbabwean chartered accountant"
+            src="https://images.unsplash.com/photo-1573164574511-73c773193279?auto=format&fit=crop&w=1920&q=80"
+            alt="Arygyle chartered accountancy team in Harare"
             referrerPolicy="no-referrer"
-            className="w-full h-full object-cover object-top filter brightness-50"
+            className="w-full h-full object-cover object-center"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-navy-dark via-navy-deep/90 to-navy-dark/80" />
+          <div className="absolute inset-0 bg-gradient-to-b from-navy-dark/55 via-navy-dark/25 to-navy-dark/70" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 space-y-4 relative z-10 text-center max-w-3xl mx-auto animate-slideUp">

@@ -34,7 +34,7 @@ export const ContactView: React.FC = () => {
           referrerPolicy="no-referrer"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy-dark/95 via-navy-deep/85 to-navy-dark/90" />
+        <div className="absolute inset-0 bg-gradient-to-b from-navy-dark/55 via-navy-dark/25 to-navy-dark/70" />
         <div className="absolute inset-0 opacity-[0.1] text-gold-accent dot-grid pointer-events-none" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 space-y-4 text-center max-w-2xl mx-auto relative z-10 animate-slideUp">
           <div className="inline-flex items-center gap-2 bg-white/10 text-gold-accent px-3 py-1 rounded-full text-xs font-semibold">
