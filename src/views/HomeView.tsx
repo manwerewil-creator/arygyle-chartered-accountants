@@ -57,18 +57,14 @@ export const HomeView: React.FC<HomeViewProps> = ({
           <motion.img
             src="/hero.jpg"
             alt="Arygyle Chartered Accountants — professional financial advisory in Harare, Zimbabwe"
-            className="w-full h-full object-cover object-center filter brightness-[0.4] contrast-105"
+            className="w-full h-full object-cover object-center"
             initial={{ scale: 1.12 }}
             animate={{ scale: 1 }}
             transition={{ duration: 8, ease: 'easeOut' }}
           />
-          {/* Dual Multi-layer Gradient */}
-          <div className="absolute inset-0 bg-gradient-to-r from-navy-dark/95 via-navy-deep/85 to-navy-dark/95" />
-          <div className="absolute inset-0 bg-gradient-to-t from-navy-dark via-transparent to-navy-dark/70" />
+          {/* Minimal bottom scrim only — keeps the photograph clear while text stays legible */}
+          <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/80 via-transparent to-navy-dark/15" />
         </div>
-
-        {/* Subtle Ambient Golden Dot Overlay */}
-        <div className="absolute inset-0 opacity-[0.12] pointer-events-none z-0 text-gold-accent dot-grid" />
 
         {/* Floating decorative orbs */}
         <div className="absolute top-24 -left-10 w-72 h-72 rounded-full bg-gold-accent/10 blur-3xl animate-floaty pointer-events-none" />

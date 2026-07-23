@@ -118,10 +118,10 @@ export const ServicesView: React.FC<ServicesViewProps> = ({
           {/* Image Banner */}
           <div className="relative rounded-2xl overflow-hidden h-48 sm:h-60 border border-gray-200 shadow-inner">
             <img
-              src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=80"
-              alt="Official Legal Document Signing"
+              src="https://images.unsplash.com/photo-1573164574511-73c773193279?auto=format&fit=crop&w=1200&q=80"
+              alt="Business team registering a company in Harare"
               referrerPolicy="no-referrer"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-top"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-navy-deep/40 to-transparent p-6 flex items-end">
               <div>
