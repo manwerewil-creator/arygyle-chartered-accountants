@@ -1,0 +1,221 @@
+@import "tailwindcss";
+
+/* ============================================================
+   ARYGYLE CHARTERED ACCOUNTANTS — DESIGN SYSTEM
+   Tailwind v4 theme tokens + brand utilities + motion library
+   ============================================================ */
+
+@theme {
+  /* Brand palette */
+  --color-navy-deep: #0d1240;
+  --color-navy-dark: #0a0e2e;
+  --color-gold-accent: #f2a93b;
+  --color-gold-hover: #e09526;
+  --color-cool-blue: #1e3a8a;
+  --color-grey-subtle: #9ca3af;
+
+  /* Typography — wired to Google Fonts loaded in index.html */
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Sora", "Inter", system-ui, sans-serif;
+  --font-serif: "Fraunces", Georgia, "Times New Roman", serif;
+
+  /* Motion easing */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@layer base {
+  :root {
+    --navy-deep: #0d1240;
+    --navy-dark: #0a0e2e;
+    --gold-accent: #f2a93b;
+    --gold-hover: #e09526;
+    --cool-blue: #1e3a8a;
+    --grey-subtle: #9ca3af;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: #0d1240;
+    background-color: #ffffff;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+
+  /* Branded text selection */
+  ::selection {
+    background-color: #f2a93b;
+    color: #0a0e2e;
+  }
+
+  /* Slim branded scrollbar */
+  ::-webkit-scrollbar { width: 11px; height: 11px; }
+  ::-webkit-scrollbar-track { background: #f1f5f9; }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(#0d1240, #1e3a8a);
+    border-radius: 999px;
+    border: 2px solid #f1f5f9;
+  }
+  ::-webkit-scrollbar-thumb:hover { background: #0a0e2e; }
+}
+
+/* ---------- Brand color utilities (kept for existing markup) ---------- */
+.bg-navy-deep { background-color: #0d1240; }
+.bg-navy-dark { background-color: #0a0e2e; }
+.text-navy-deep { color: #0d1240; }
+.text-navy-dark { color: #0a0e2e; }
+.border-navy-deep { border-color: #0d1240; }
+
+.bg-gold-accent { background-color: #f2a93b; }
+.hover\:bg-gold-hover:hover { background-color: #e09526; }
+.text-gold-accent { color: #f2a93b; }
+.border-gold-accent { border-color: #f2a93b; }
+
+.bg-cool-blue { background-color: #1e3a8a; }
+.text-cool-blue { color: #1e3a8a; }
+
+/* Hero serif italic moment */
+.hero-serif-tagline,
+.font-serif {
+  font-family: var(--font-serif);
+  font-style: italic;
+}
+.font-display { font-family: var(--font-display); }
+
+/* ============================================================
+   KEYFRAME ANIMATION LIBRARY
+   (fadeIn / slideUp / scaleUp were referenced but never defined)
+   ============================================================ */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes scaleUp {
+  from { opacity: 0; transform: scale(0.92); }
+  to   { opacity: 1; transform: scale(1); }
+}
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-12px); }
+}
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50%      { background-position: 100% 50%; }
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes pulseRing {
+  0%   { box-shadow: 0 0 0 0 rgba(242, 169, 59, 0.45); }
+  70%  { box-shadow: 0 0 0 14px rgba(242, 169, 59, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(242, 169, 59, 0); }
+}
+@keyframes sheen {
+  0%   { transform: translateX(-120%) skewX(-18deg); }
+  60%, 100% { transform: translateX(220%) skewX(-18deg); }
+}
+
+/* ---------- Animation utility classes ---------- */
+.animate-fadeIn   { animation: fadeIn 0.5s var(--ease-out-expo) both; }
+.animate-slideUp  { animation: slideUp 0.6s var(--ease-out-expo) both; }
+.animate-slideDown{ animation: slideDown 0.4s var(--ease-out-expo) both; }
+.animate-scaleUp  { animation: scaleUp 0.4s var(--ease-spring) both; }
+.animate-floaty   { animation: floaty 6s ease-in-out infinite; }
+.animate-pulseRing { animation: pulseRing 2.4s ease-out infinite; }
+
+/* Animated aurora / gradient background for dark hero sections */
+.aurora-bg {
+  background: linear-gradient(120deg, #0a0e2e, #0d1240, #1e3a8a, #0d1240, #0a0e2e);
+  background-size: 300% 300%;
+  animation: gradientShift 16s ease infinite;
+}
+
+/* Gold shimmering text (headline highlight) */
+.text-shimmer {
+  background: linear-gradient(90deg, #f2a93b 0%, #ffe6b0 25%, #f2a93b 50%, #ffe6b0 75%, #f2a93b 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: shimmer 5s linear infinite;
+}
+
+/* Button sheen sweep on hover */
+.btn-sheen { position: relative; overflow: hidden; }
+.btn-sheen::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 40%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.35), transparent);
+  transform: translateX(-120%) skewX(-18deg);
+  pointer-events: none;
+}
+.btn-sheen:hover::after { animation: sheen 0.9s ease; }
+
+/* Underline grow link */
+.link-underline {
+  background-image: linear-gradient(#f2a93b, #f2a93b);
+  background-size: 0% 2px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s var(--ease-out-expo);
+}
+.link-underline:hover { background-size: 100% 2px; }
+
+/* Marquee track */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+.marquee-track:hover { animation-play-state: paused; }
+.marquee-mask {
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+/* Subtle dotted brand texture */
+.dot-grid {
+  background-image: radial-gradient(currentColor 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+/* Card lift shadows */
+.shadow-card { box-shadow: 0 10px 30px -12px rgba(13, 18, 64, 0.18); }
+.shadow-card-lg { box-shadow: 0 30px 60px -20px rgba(13, 18, 64, 0.35); }
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
