@@ -539,13 +539,13 @@ export const ServicesView: React.FC<ServicesViewProps> = ({
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-gray-200 pb-4">
             <div>
               <span className="text-xs font-bold uppercase tracking-wider text-gold-accent">
-                Service Line 06 • Statutory & Internal Audits
+                Service Line 06 • Internal Audit &amp; Assurance
               </span>
               <h2 className="text-2xl font-extrabold text-navy-deep mt-1">
-                Auditing & Assurance Services (9 Specialized Categories)
+                Internal Audit &amp; Assurance Services
               </h2>
               <p className="text-xs text-gray-600 mt-1">
-                Independent verification, operational health checks, and statutory assurance for Zimbabwean entities.
+                Internal controls, operational health checks and compliance assurance for Zimbabwean entities. We do not provide external financial statement audits.
               </p>
             </div>
             <button

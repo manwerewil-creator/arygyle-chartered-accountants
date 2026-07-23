@@ -18,15 +18,61 @@ export const FIRM_DETAILS = {
   canonicalEmail: 'farai@arygylecazim.co.zw',
   alternateEmails: ['farai@arygyle.co.zw', 'arygylecazim@gmail.com'],
   domain: 'www.arygyle.com',
+  founded: 'February 2019',
+  specialistLine: 'Taxation Specialists — ZIMRA Registered Tax Agents',
+  credentialStrip: 'ZIMRA Registered Tax Agent • Tax & VAT Structuring Specialist • Professional Tax Opinions • Tax Compliance • Company Formation',
   managingPartner: {
-    name: 'Farai',
-    credentials: 'M.Acc (Chinhoyi University of Technology), ACCA',
-    role: 'Managing Partner & Head of Audit',
-    experience: 'Former Assistant Accountant at Exodus and Company (Harare construction leader) specializing in project costing, financial budgeting, capital management and statutory audit compliance.',
-    flagNote: 'Note: Please verify full surname and primary canonical contact email before site deployment.'
+    name: 'Farai Arygyle Nicholia Tofa',
+    shortName: 'Farai Tofa',
+    credentials: 'AGTA(Z), M.Acc, ACCA',
+    role: 'Managing Partner & Principal Tax Consultant',
+    institute: 'Institute of Chartered Tax Accountants of Zimbabwe (CTA)',
+    designation: 'Associate — General Tax Accountant (AGTA(Z))',
+    membershipNo: '96607026',
+    certificateNo: '8458299',
+    validUntil: '31 December 2026',
+    experience: 'A ZIMRA-registered tax practitioner specialising in corporate tax advisory, VAT structuring and ZIMRA audit representation. Former Assistant Accountant at Exodus and Company (a Harare construction firm), with deep expertise in project costing, tax compliance and fiscalisation.',
+    specialisations: [
+      'Corporate tax advisory & planning',
+      'VAT structuring for construction & mining',
+      'ZIMRA audit representation',
+      'Transfer pricing compliance',
+      'Tax due diligence',
+      'Fiscalisation & electronic tax invoice compliance',
+      'Cross-border taxation',
+      'Tax risk management',
+      'Business restructuring',
+      'CFO & outsourced finance advisory'
+    ],
+    flagNote: 'Credentials verified against CTA Membership Certificate No. 8458299 (Membership No. 96607026), valid until 31 December 2026.'
   },
   actReference: 'Companies and Other Business Entities Act (Chapter 24:31)',
   formationTurnaround: '5 Working Days'
+};
+
+// Firm "About Us" — background, vision, mission, values and objectives (client-provided)
+export const ABOUT_CONTENT = {
+  background:
+    'Arygyle Chartered Accountants Zimbabwe (Private) Limited set foot in February 2019 providing accounting, taxation, corporate secretarial and statutory services. One of the best ways of ensuring success and continuity in any business is to ensure that all statutory obligations are met in time. Our services are dedicated to assisting our Zimbabwean and diaspora clients, and we serve a broad client base ranging from start-up companies to listed and regulated public limited companies. As legal requirements on Zimbabwean registered companies grow more complex and stringent, we help businesses meet their statutory and regulatory obligations and satisfy increasing stakeholder demands for corporate compliance.',
+  vision:
+    'To serve the needs of the customer in relation to accounting, taxation, corporate secretarial and statutory services.',
+  mission:
+    'To provide reliable and efficient services of uncompromising world-class standards for enterprises, with integrity, professionalism, independence and excellence.',
+  coreValues: [
+    'Act ethically',
+    'Lead by example',
+    'Open and honest in all communications',
+    'Deliver a quality service with an emphasis on integrity',
+    'Foster teamwork and collaboration with other member firms',
+    'Maintain a supportive environment in which our people can flourish'
+  ],
+  objectives: [
+    'Maintain a high level of integrity, objectivity and professional standards',
+    'Respond proactively to new challenges and developments in our sector',
+    'Maintain a high level of performance, professional knowledge and industry expertise',
+    'Ensure that our clients receive the best possible professional advice',
+    'Provide high-quality services through global resources, close relationships, depth of talent, integrity and the stature of other member firms'
+  ]
 };
 
 export const SERVICES_LIST: ServiceItem[] = [
@@ -103,17 +149,17 @@ export const SERVICES_LIST: ServiceItem[] = [
   },
   {
     id: 'auditing-services',
-    title: 'Comprehensive Auditing Services',
-    shortDesc: 'Statutory financial statement audits, internal operational controls, due diligence, and public sector audits.',
-    fullDesc: 'Independent audit solutions for businesses, cooperatives, and institutions in Zimbabwe. We provide rigorous compliance and value-addition across 9 specialized audit categories.',
+    title: 'Internal Audit & Assurance',
+    shortDesc: 'Internal audit, operational controls, compliance reviews and due diligence. (We do not provide external financial statement audits.)',
+    fullDesc: 'Independent internal audit and assurance for businesses, cooperatives and institutions in Zimbabwe — strengthening internal controls, risk management and statutory compliance. Our assurance work is internal-audit focused; we do not offer external financial statement audits.',
     iconName: 'FileSpreadsheet',
     highlights: [
-      'Financial Statement & Tax Audits',
-      'Operation & Compliance Audits',
-      'Due Diligence & Value for Money Audits',
-      'Information System & Public Sector Audits'
+      'Internal controls & operational audits',
+      'Compliance & tax audits',
+      'Due diligence & value-for-money reviews',
+      'Risk management & information systems audits'
     ],
-    ctaText: 'Request Audit'
+    ctaText: 'Request Internal Audit'
   }
 ];
 
@@ -266,12 +312,11 @@ export const STARTUP_PACKAGES: StartupPackage[] = [
 ];
 
 export const AUDIT_CATEGORIES = [
-  { title: 'Financial Statement Audit', desc: 'Independent verification of statutory balance sheets and income statements under IFRS.' },
+  { title: 'Internal Controls Audit', desc: 'Review and strengthening of internal financial controls, approval workflows and segregation of duties.' },
   { title: 'Operational Audit', desc: 'Review of operational procedures, internal controls, efficiency, and resource utilization.' },
-  { title: 'Due Diligence Audit', desc: 'Financial, tax, and legal health check before acquisitions, investments, or mergers.' },
-  { title: 'Public Sector Audit', desc: 'Specialized accounting for government entities, public funds, state enterprises & local authorities.' },
+  { title: 'Due Diligence Review', desc: 'Financial, tax, and legal health check before acquisitions, investments, or mergers.' },
+  { title: 'Risk-Based Audit', desc: 'Identification and testing of the highest-risk areas across finance, tax and operations.' },
   { title: 'Information Systems Audit', desc: 'Assessment of IT infrastructure security, financial data integrity, and digital ledgers.' },
-  { title: 'Environmental & Social Audit', desc: 'ESG compliance, environmental impact financial accounting, and community reporting.' },
   { title: 'Tax Audit', desc: 'Comprehensive review of past ZIMRA filings to ensure zero penalty exposure before official inspections.' },
   { title: 'Compliance Audit', desc: 'Verification against Companies Act (24:31), NSSA, PRAZ, and regulatory statutory mandates.' },
   { title: 'Value for Money Audit', desc: 'Performance and efficiency evaluation ensuring maximum return on capital expenditures.' }

@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Page } from '../types';
-import { FIRM_DETAILS } from '../data/firmData';
-import { ShieldCheck, Award, GraduationCap, Briefcase, Users, Clock, CheckCircle2, ArrowRight, MapPin, Building2 } from 'lucide-react';
+import { FIRM_DETAILS, ABOUT_CONTENT } from '../data/firmData';
+import { ShieldCheck, Award, GraduationCap, Briefcase, Users, Clock, CheckCircle2, ArrowRight, MapPin, Building2, Target, Eye, Heart } from 'lucide-react';
 
 interface AboutViewProps {
   setActivePage: (page: Page) => void;
@@ -59,9 +59,7 @@ export const AboutView: React.FC<AboutViewProps> = ({
               Professional Financial Counsel Made Accessible & Affordable
             </h2>
 
-            <p>
-              <strong>Arygyle Chartered Accountants Zimbabwe (Private) Limited</strong> is a registered chartered accounting and financial advisory firm based in Kuwadzana 3, Harare. We recognized that small and growing Zimbabwean businesses were frequently left stranded between uncertified bookkeepers and prohibitively expensive audit firms.
-            </p>
+            <p>{ABOUT_CONTENT.background}</p>
 
             <p>
               Our firm's defining campaign pledge — <em className="text-navy-deep font-semibold">"No business is too small. Consult Professional Accountants at an affordable price"</em> — reflects our firm belief that compliance and sound financial structure are the essential foundation of business survival and capital growth in Zimbabwe.
@@ -170,11 +168,10 @@ export const AboutView: React.FC<AboutViewProps> = ({
             
             <div className="flex flex-col sm:flex-row items-center gap-6 border-b border-gray-100 pb-6">
               
-              <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-gold-accent shadow-md flex-shrink-0">
+              <div className="w-28 h-28 rounded-2xl overflow-hidden border-2 border-gold-accent shadow-md flex-shrink-0">
                 <img
-                  src="https://images.unsplash.com/photo-1495603889488-42d1d66e5523?auto=format&fit=crop&w=400&q=80"
-                  alt="Managing Partner Farai"
-                  referrerPolicy="no-referrer"
+                  src="/farai-tofa.png"
+                  alt="Farai Arygyle Nicholia Tofa — Managing Partner"
                   className="w-full h-full object-cover object-top"
                 />
               </div>
@@ -209,13 +206,22 @@ export const AboutView: React.FC<AboutViewProps> = ({
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-3.5 h-3.5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span><strong>Chartered Tax Accountant — AGTA(Z):</strong> Associate (General Tax Accountant) of the Institute of Chartered Tax Accountants of Zimbabwe. Membership No. 96607026.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-green-600 flex-shrink-0 mt-0.5" />
                     <span><strong>Master of Accountancy (M.Acc):</strong> Awarded by Chinhoyi University of Technology (CUT).</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-3.5 h-3.5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span><strong>ACCA Professional Qualification:</strong> Member of the Association of Chartered Certified Accountants.</span>
+                    <span><strong>ACCA:</strong> Association of Chartered Certified Accountants.</span>
                   </li>
                 </ul>
+
+                <div className="mt-2 inline-flex items-center gap-2 bg-navy-deep/5 border border-navy-deep/10 rounded-lg px-3 py-2 text-[11px] text-navy-deep">
+                  <ShieldCheck className="w-4 h-4 text-gold-accent flex-shrink-0" />
+                  <span>ZIMRA Registered Tax Agent • CTA Certificate No. 8458299 • Valid until 31 Dec 2026</span>
+                </div>
               </div>
 
               <div className="space-y-3">
@@ -224,13 +230,15 @@ export const AboutView: React.FC<AboutViewProps> = ({
                   <span>Industry Financial Experience</span>
                 </h4>
                 <p className="text-gray-600">
-                  Prior experience serving as Assistant Accountant at <strong>Exodus and Company</strong>, a premier Harare construction and infrastructure corporate.
+                  A ZIMRA-registered tax practitioner. Prior experience as Assistant Accountant at <strong>Exodus and Company</strong>, a Harare construction firm.
                 </p>
-                <ul className="space-y-1 text-gray-600 list-disc list-inside">
-                  <li>Construction project costing & capital allocation</li>
-                  <li>Financial budgeting, cash flow & ledger controls</li>
-                  <li>Statutory return compliance & auditor liaison</li>
-                </ul>
+                <div className="flex flex-wrap gap-1.5 pt-1">
+                  {FIRM_DETAILS.managingPartner.specialisations.slice(0, 6).map((s, i) => (
+                    <span key={i} className="text-[10px] font-semibold text-navy-deep bg-slate-100 border border-slate-200 px-2 py-1 rounded-full">
+                      {s}
+                    </span>
+                  ))}
+                </div>
               </div>
 
             </div>
@@ -240,38 +248,68 @@ export const AboutView: React.FC<AboutViewProps> = ({
         </div>
       </section>
 
-      {/* CORE VALUES / TRUST COMMITMENT */}
+      {/* VISION & MISSION */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <motion.div whileHover={{ y: -4 }} className="p-7 bg-navy-deep text-white rounded-2xl border-t-4 border-gold-accent shadow-lg space-y-3">
+            <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center text-gold-accent">
+              <Eye className="w-6 h-6" />
+            </div>
+            <h3 className="text-xl font-extrabold">Our Vision</h3>
+            <p className="text-sm text-gray-200 leading-relaxed">{ABOUT_CONTENT.vision}</p>
+          </motion.div>
+
+          <motion.div whileHover={{ y: -4 }} className="p-7 bg-white text-navy-deep rounded-2xl border-2 border-slate-100 border-t-4 border-t-gold-accent shadow-card space-y-3">
+            <div className="w-12 h-12 rounded-xl bg-navy-deep flex items-center justify-center text-gold-accent">
+              <Target className="w-6 h-6" />
+            </div>
+            <h3 className="text-xl font-extrabold">Our Mission</h3>
+            <p className="text-sm text-gray-600 leading-relaxed">{ABOUT_CONTENT.mission}</p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* CORE VALUES */}
+      <section className="bg-slate-50 py-16 border-y border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 space-y-8">
+          <div className="text-center space-y-2 max-w-2xl mx-auto">
+            <span className="text-xs font-bold uppercase tracking-wider text-gold-accent">What We Stand For</span>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-navy-deep">Our Core Values</h2>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {ABOUT_CONTENT.coreValues.map((value, idx) => (
+              <motion.div
+                key={idx}
+                whileHover={{ y: -4 }}
+                className="p-5 bg-white rounded-2xl border border-gray-200 shadow-xs flex items-start gap-3"
+              >
+                <div className="w-9 h-9 rounded-lg bg-gold-accent/15 text-gold-accent flex items-center justify-center flex-shrink-0">
+                  <Heart className="w-4 h-4" />
+                </div>
+                <p className="text-sm font-semibold text-navy-deep pt-1.5">{value}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* OBJECTIVES */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 space-y-8">
         <div className="text-center space-y-2 max-w-2xl mx-auto">
-          <span className="text-xs font-bold uppercase tracking-wider text-gold-accent">
-            Our Service Commitments
-          </span>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-navy-deep">
-            The Arygyle Client Guarantee
-          </h2>
+          <span className="text-xs font-bold uppercase tracking-wider text-gold-accent">Our Commitments</span>
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-navy-deep">Firm Objectives</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <motion.div whileHover={{ y: -4 }} className="p-6 bg-white rounded-2xl border border-gray-200 shadow-xs space-y-2">
-            <h3 className="font-bold text-navy-deep text-base">1. Zero Hidden Fees</h3>
-            <p className="text-xs text-gray-600">
-              Our PBC ($100), PLC ($150), and retainer packages ($20, $50, $130) are all-inclusive. You know exactly what you pay before we begin.
-            </p>
-          </motion.div>
-
-          <motion.div whileHover={{ y: -4 }} className="p-6 bg-white rounded-2xl border border-gray-200 shadow-xs space-y-2">
-            <h3 className="font-bold text-navy-deep text-base">2. Guaranteed 5-Day Formation</h3>
-            <p className="text-xs text-gray-600">
-              We maintain direct, active filing procedures at the Registrar of Companies in Harare to deliver complete company certificates in 5 working days.
-            </p>
-          </motion.div>
-
-          <motion.div whileHover={{ y: -4 }} className="p-6 bg-white rounded-2xl border border-gray-200 shadow-xs space-y-2">
-            <h3 className="font-bold text-navy-deep text-base">3. Year-Round Tax Clearance</h3>
-            <p className="text-xs text-gray-600">
-              We monitor your ZIMRA account monthly so your ITF263 clearance certificate never expires when you need to bid on a critical tender.
-            </p>
-          </motion.div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+          {ABOUT_CONTENT.objectives.map((obj, idx) => (
+            <div key={idx} className="flex items-start gap-3 p-4 bg-white rounded-xl border border-gray-200 shadow-xs">
+              <span className="w-7 h-7 rounded-full bg-navy-deep text-gold-accent text-xs font-extrabold flex items-center justify-center flex-shrink-0">
+                {idx + 1}
+              </span>
+              <p className="text-xs text-gray-700 leading-relaxed pt-0.5">{obj}</p>
+            </div>
+          ))}
         </div>
 
         <div className="pt-4 text-center">
@@ -279,7 +317,7 @@ export const AboutView: React.FC<AboutViewProps> = ({
             onClick={() => setActivePage('services')}
             className="bg-navy-deep hover:bg-navy-dark text-white font-bold px-6 py-3.5 rounded-xl text-xs transition-colors inline-flex items-center gap-2 shadow-sm"
           >
-            <span>Explore Full Service Catalog</span>
+            <span>Explore Our Full Service Catalog</span>
             <ArrowRight className="w-4 h-4 text-gold-accent" />
           </button>
         </div>

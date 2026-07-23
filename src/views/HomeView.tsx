@@ -98,7 +98,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
             variants={{ hidden: { opacity: 0, y: 16 }, visible: { opacity: 1, y: 0 } }}
             className="text-gray-200 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto font-normal"
           >
-            {FIRM_DETAILS.campaignLine} We serve sole traders, new entrepreneurs, cooperatives, growing SMEs, and established companies across Zimbabwe with approachable, transparent financial expertise.
+            Taxation specialists &amp; ZIMRA-registered tax agents in Harare — tax advisory, VAT structuring, company registration, bookkeeping and internal audit. {FIRM_DETAILS.campaignLine}
           </motion.p>
 
           {/* Centered Interactive Hero Action Buttons */}
@@ -179,13 +179,13 @@ export const HomeView: React.FC<HomeViewProps> = ({
           </p>
           <Marquee
             items={[
-              'ZIMRA Registered Tax Practice',
+              'ZIMRA Registered Tax Agent',
+              'Chartered Tax Accountant — AGTA(Z)',
+              'Tax & VAT Structuring Specialists',
               'Companies Act (Chapter 24:31)',
-              'ACCA Qualified Leadership',
-              'ICAZ Aligned Standards',
-              'Registrar of Companies Filing',
-              'NSSA & PRAZ Compliance',
-              'Fiscal Device Interfacing',
+              'Professional Tax Opinions',
+              'Fiscalisation & e-Invoicing',
+              'Transfer Pricing Compliance',
             ].map((label) => (
               <span
                 key={label}
@@ -655,6 +655,69 @@ export const HomeView: React.FC<HomeViewProps> = ({
             </button>
           </div>
 
+        </div>
+      </section>
+
+      {/* MANAGING PARTNER SHOWCASE */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="bg-navy-deep text-white rounded-3xl overflow-hidden shadow-card-lg border-t-4 border-gold-accent grid grid-cols-1 lg:grid-cols-12">
+          {/* Portrait */}
+          <div className="lg:col-span-5 relative min-h-[360px] bg-navy-dark">
+            <img
+              src="/farai-tofa.png"
+              alt="Farai Arygyle Nicholia Tofa — Managing Partner & Principal Tax Consultant"
+              className="w-full h-full object-cover object-top absolute inset-0"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/70 via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-navy-deep/30" />
+            <span className="absolute top-4 left-4 inline-flex items-center gap-1.5 bg-gold-accent text-navy-dark text-[11px] font-extrabold px-3 py-1.5 rounded-full shadow">
+              <ShieldCheck className="w-3.5 h-3.5" />
+              ZIMRA Registered Tax Agent
+            </span>
+          </div>
+
+          {/* Details */}
+          <Reveal className="lg:col-span-7 p-7 sm:p-10 space-y-5">
+            <span className="text-xs font-bold uppercase tracking-wider text-gold-accent">
+              Meet the Managing Partner
+            </span>
+            <div className="space-y-1">
+              <h2 className="text-2xl sm:text-3xl font-extrabold">{FIRM_DETAILS.managingPartner.name}</h2>
+              <p className="text-sm text-gold-accent font-semibold">{FIRM_DETAILS.managingPartner.role}</p>
+              <p className="text-xs text-gray-300">
+                {FIRM_DETAILS.managingPartner.designation} • Membership No. {FIRM_DETAILS.managingPartner.membershipNo}
+              </p>
+            </div>
+
+            <p className="text-sm text-gray-200 leading-relaxed">
+              {FIRM_DETAILS.managingPartner.experience}
+            </p>
+
+            <div className="flex flex-wrap gap-2 pt-1">
+              {FIRM_DETAILS.managingPartner.specialisations.slice(0, 8).map((s, i) => (
+                <span key={i} className="text-[11px] font-semibold text-white bg-white/10 border border-white/15 px-2.5 py-1 rounded-full">
+                  {s}
+                </span>
+              ))}
+            </div>
+
+            <div className="flex flex-wrap gap-3 pt-2">
+              <Magnetic>
+                <button
+                  onClick={() => onOpenInquiry('Professional Tax Opinion / Consultation')}
+                  className="btn-sheen bg-gold-accent hover:bg-gold-hover text-navy-dark font-extrabold px-6 py-3.5 rounded-xl text-xs transition-all flex items-center gap-2 shadow-md"
+                >
+                  <span>Consult the Managing Partner</span>
+                  <ArrowRight className="w-4 h-4" />
+                </button>
+              </Magnetic>
+              <button
+                onClick={() => setActivePage('about')}
+                className="bg-white/10 hover:bg-white/20 text-white font-bold px-6 py-3.5 rounded-xl text-xs border border-white/25 transition-all"
+              >
+                View Full Profile &amp; Credentials
+              </button>
+            </div>
+          </Reveal>
         </div>
       </section>
 
