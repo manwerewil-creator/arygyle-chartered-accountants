@@ -12,7 +12,7 @@ interface LogoProps {
  * to stay legible; on light surfaces it renders directly.
  */
 export const Logo: React.FC<LogoProps> = ({ className = '', light = false, size = 'md' }) => {
-  const h = size === 'sm' ? 'h-10' : size === 'lg' ? 'h-16' : 'h-12';
+  const h = size === 'sm' ? 'h-11' : size === 'lg' ? 'h-20' : 'h-14';
 
   const img = (
     <img
