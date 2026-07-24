@@ -39,7 +39,7 @@ export const ContactView: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 space-y-4 text-center max-w-2xl mx-auto relative z-10 animate-slideUp">
           <div className="inline-flex items-center gap-2 bg-white/10 text-gold-accent px-3 py-1 rounded-full text-xs font-semibold">
             <MapPin className="w-4 h-4 text-gold-accent" />
-            <span>Kuwadzana 3, Harare, Zimbabwe</span>
+            <span>Harare CBD, Zimbabwe</span>
           </div>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-white">
             Contact Arygyle Chartered Accountants
@@ -252,10 +252,10 @@ export const ContactView: React.FC = () => {
               <div className="w-full h-48 bg-slate-200 rounded-xl overflow-hidden relative flex items-center justify-center text-center p-4 border border-gray-300">
                 <div className="space-y-1">
                   <MapPin className="w-8 h-8 text-navy-deep mx-auto" />
-                  <p className="font-bold text-navy-deep text-xs">3049 Kuwadzana 3, Harare, Zimbabwe</p>
+                  <p className="font-bold text-navy-deep text-xs">210 Throughmton House, Cnr J. Nyerere & S. Machel, Harare</p>
                   <p className="text-[11px] text-gray-600">Arygyle Chartered Accountants Executive Office</p>
                   <a
-                    href="https://maps.google.com/?q=Kuwadzana+3+Harare+Zimbabwe"
+                    href="https://maps.google.com/?q=Throughmton+House+Julius+Nyerere+Samora+Machel+Harare"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block text-[10px] font-bold text-navy-deep hover:underline pt-1"

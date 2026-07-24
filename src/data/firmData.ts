@@ -11,7 +11,7 @@ export const FIRM_DETAILS = {
   brandName: 'Arygyle Chartered Accountants',
   tagline: 'Let Us Help You Grow Your Business.',
   campaignLine: 'No business is too small. Consult Professional Accountants at an affordable price.',
-  address: '3049 Kuwadzana 3, Harare, Zimbabwe',
+  address: '210 Throughmton House, Cnr J. Nyerere & S. Machel, Harare',
   primaryPhone: '+263 777 592 952',
   whatsappNumber: '263777592952',
   secondaryPhone: '+263 717 061 148',

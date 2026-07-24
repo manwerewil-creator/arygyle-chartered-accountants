@@ -108,7 +108,7 @@ export const AboutView: React.FC<AboutViewProps> = ({
                 <h3 className="text-lg font-bold">Arygyle Chartered Accountants</h3>
                 <p className="text-xs text-gray-300 flex items-center gap-1">
                   <MapPin className="w-3.5 h-3.5 text-gold-accent" />
-                  <span>3049 Kuwadzana 3, Harare, Zimbabwe</span>
+                  <span>210 Throughmton House, Cnr J. Nyerere & S. Machel, Harare</span>
                 </p>
               </div>
 

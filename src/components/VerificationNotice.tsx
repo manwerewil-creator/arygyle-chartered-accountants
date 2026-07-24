@@ -83,7 +83,7 @@ export const VerificationNotice: React.FC<VerificationNoticeProps> = ({ isOpen, 
                 <span>Physical Office Address</span>
               </div>
               <p className="text-gray-800 font-medium">{FIRM_DETAILS.address}</p>
-              <p className="text-[11px] text-gray-500">Kuwadzana 3, Harare, Zimbabwe</p>
+              <p className="text-[11px] text-gray-500">Harare CBD, Zimbabwe</p>
             </div>
 
             <div className="bg-slate-50 p-3.5 rounded-lg border border-gray-200 space-y-1.5">

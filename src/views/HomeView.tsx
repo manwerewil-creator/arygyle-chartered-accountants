@@ -543,7 +543,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 <div className="p-4 bg-white rounded-xl border border-gray-200 shadow-xs space-y-2">
                   <Building2 className="w-6 h-6 text-gold-accent" />
                   <h4 className="font-bold text-navy-deep text-sm">Harare Local Office</h4>
-                  <p className="text-xs text-gray-600">Accessible physical offices in Kuwadzana 3, Harare with direct WhatsApp support.</p>
+                  <p className="text-xs text-gray-600">Accessible physical offices in Harare CBD with direct WhatsApp support.</p>
                 </div>
               </div>
 
