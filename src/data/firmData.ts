@@ -31,7 +31,7 @@ export const FIRM_DETAILS = {
     membershipNo: '96607026',
     certificateNo: '8458299',
     validUntil: '31 December 2026',
-    experience: 'A ZIMRA-registered tax practitioner specialising in corporate tax advisory, VAT structuring and ZIMRA audit representation. Former Assistant Accountant at Exodus and Company (a Harare construction firm), with deep expertise in project costing, tax compliance and fiscalisation.',
+    experience: 'A ZIMRA-registered tax practitioner with over 10 years of experience in the profession, specialising in corporate tax advisory, VAT structuring and ZIMRA audit representation, with deep expertise in tax compliance, fiscalisation and business restructuring.',
     specialisations: [
       'Corporate tax advisory & planning',
       'VAT structuring for construction & mining',

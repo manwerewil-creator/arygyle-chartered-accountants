@@ -230,7 +230,7 @@ export const AboutView: React.FC<AboutViewProps> = ({
                   <span>Industry Financial Experience</span>
                 </h4>
                 <p className="text-gray-600">
-                  A ZIMRA-registered tax practitioner. Prior experience as Assistant Accountant at <strong>Exodus and Company</strong>, a Harare construction firm.
+                  A ZIMRA-registered tax practitioner with <strong>over 10 years of experience</strong> in the profession.
                 </p>
                 <div className="flex flex-wrap gap-1.5 pt-1">
                   {FIRM_DETAILS.managingPartner.specialisations.slice(0, 6).map((s, i) => (
