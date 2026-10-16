@@ -1,134 +1,29 @@
-import React, { useState } from 'react';
-import { AnimatePresence, motion } from 'motion/react';
+import React, { useEffect, useState } from 'react';
+import './corporate.css';
+import { CalculatorModal } from './components/CalculatorModal';
+import { FaqView } from './views/FaqView';
+import { MotionConfig } from 'motion/react';
 import { Page } from './types';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { WhatsAppWidget } from './components/WhatsAppWidget';
-import { VerificationNotice } from './components/VerificationNotice';
-import { CalculatorModal } from './components/CalculatorModal';
 import { InquiryModal } from './components/InquiryModal';
-import { ScrollProgress } from './components/motion';
-
 import { HomeView } from './views/HomeView';
 import { AboutView } from './views/AboutView';
 import { ServicesView } from './views/ServicesView';
 import { PricingView } from './views/PricingView';
 import { ContactView } from './views/ContactView';
-import { FaqView } from './views/FaqView';
-
+const pages: Page[] = ['home', 'about', 'services', 'pricing', 'contact', 'faq'];
+const getPage = (): Page => { const p = window.location.hash.slice(1) as Page; return pages.includes(p) ? p : 'home'; };
 export default function App() {
-  const [activePage, setActivePage] = useState<Page>('home');
-  const [inquiryModalOpen, setInquiryModalOpen] = useState(false);
-  const [preselectedService, setPreselectedService] = useState<string>('');
-  const [calculatorModalOpen, setCalculatorModalOpen] = useState(false);
-  const [verificationModalOpen, setVerificationModalOpen] = useState(false);
-
-  const handleOpenInquiry = (serviceOrPackage?: string) => {
-    setPreselectedService(serviceOrPackage || 'Company Formation');
-    setInquiryModalOpen(true);
-  };
-
-  const renderPage = () => {
-    switch (activePage) {
-      case 'home':
-        return (
-          <HomeView
-            setActivePage={setActivePage}
-            onOpenInquiry={handleOpenInquiry}
-            onOpenCalculator={() => setCalculatorModalOpen(true)}
-          />
-        );
-      case 'about':
-        return (
-          <AboutView
-            setActivePage={setActivePage}
-            onOpenInquiry={handleOpenInquiry}
-            onOpenVerificationModal={() => setVerificationModalOpen(true)}
-          />
-        );
-      case 'services':
-        return (
-          <ServicesView
-            setActivePage={setActivePage}
-            onOpenInquiry={handleOpenInquiry}
-          />
-        );
-      case 'pricing':
-        return (
-          <PricingView
-            onOpenInquiry={handleOpenInquiry}
-            onOpenCalculator={() => setCalculatorModalOpen(true)}
-          />
-        );
-      case 'contact':
-        return <ContactView />;
-      case 'faq':
-        return <FaqView onOpenInquiry={handleOpenInquiry} />;
-      default:
-        return null;
-    }
-  };
-
-  return (
-    <div className="min-h-screen flex flex-col bg-white text-navy-deep antialiased font-sans">
-
-      {/* Reading progress bar */}
-      <ScrollProgress />
-
-      {/* Sticky Header Navigation */}
-      <Header
-        activePage={activePage}
-        setActivePage={setActivePage}
-        onOpenInquiry={handleOpenInquiry}
-        onOpenCalculator={() => setCalculatorModalOpen(true)}
-        onOpenVerificationModal={() => setVerificationModalOpen(true)}
-      />
-
-      {/* Main Page View Routing with animated transitions */}
-      <main className="flex-1">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={activePage}
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -8 }}
-            transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-          >
-            {renderPage()}
-          </motion.div>
-        </AnimatePresence>
-      </main>
-
-      {/* Footer */}
-      <Footer
-        setActivePage={setActivePage}
-        onOpenInquiry={handleOpenInquiry}
-        onOpenVerificationModal={() => setVerificationModalOpen(true)}
-      />
-
-      {/* Floating WhatsApp Action Widget */}
-      <WhatsAppWidget />
-
-      {/* Modals */}
-      <InquiryModal
-        isOpen={inquiryModalOpen}
-        onClose={() => setInquiryModalOpen(false)}
-        preselectedServiceOrPackage={preselectedService}
-      />
-
-      <CalculatorModal
-        isOpen={calculatorModalOpen}
-        onClose={() => setCalculatorModalOpen(false)}
-        onSelectPackage={(quoteSummary) => {
-          handleOpenInquiry(quoteSummary);
-        }}
-      />
-
-      <VerificationNotice
-        isOpen={verificationModalOpen}
-        onClose={() => setVerificationModalOpen(false)}
-      />
-
-    </div>
-  );
+    const [activePage, setActivePage] = useState<Page>(getPage);
+    const [calculatorOpen, setCalculatorOpen] = useState(false);
+    const [inquiryModalOpen, setInquiryModalOpen] = useState(false);
+    const [preselectedService, setPreselectedService] = useState('');
+    const navigate = (p: Page) => { if (window.location.hash !== '#' + p)
+        window.location.hash = p; setActivePage(p); };
+    useEffect(() => { const change = () => setActivePage(getPage()); window.addEventListener('hashchange', change); return () => window.removeEventListener('hashchange', change); }, []);
+    useEffect(() => { window.scrollTo({ top: 0, behavior: 'instant' }); document.title = (activePage === 'home' ? 'Corporate Tax Advisory' : activePage === 'pricing' ? 'Packages' : activePage[0].toUpperCase() + activePage.slice(1)) + ' | Arygyle Chartered Accountants Zimbabwe'; }, [activePage]);
+    const openInquiry = (service = 'Corporate Tax Consultation') => { setPreselectedService(service); setInquiryModalOpen(true); };
+    return <MotionConfig reducedMotion="user"><div className="site-shell"><a className="skip-link" href="#main-content">Skip to content</a><Header activePage={activePage} setActivePage={navigate} onOpenInquiry={openInquiry}/><main id="main-content" tabIndex={-1}>{activePage === 'home' ? <HomeView setActivePage={navigate} onOpenInquiry={openInquiry}/> : activePage === 'about' ? <AboutView onOpenInquiry={openInquiry}/> : activePage === 'services' ? <ServicesView onOpenInquiry={openInquiry}/> : activePage === 'pricing' ? <PricingView onOpenInquiry={openInquiry} onOpenCalculator={() => setCalculatorOpen(true)}/> : activePage === 'faq' ? <FaqView onOpenInquiry={openInquiry}/> : <ContactView onOpenInquiry={openInquiry}/>}</main><Footer setActivePage={navigate} onOpenInquiry={openInquiry}/><WhatsAppWidget /><CalculatorModal isOpen={calculatorOpen} onClose={() => setCalculatorOpen(false)} onSelectPackage={openInquiry}/><InquiryModal isOpen={inquiryModalOpen} onClose={() => setInquiryModalOpen(false)} preselectedServiceOrPackage={preselectedService}/></div></MotionConfig>;
 }

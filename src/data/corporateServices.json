@@ -1,0 +1,646 @@
+[
+  {
+    "id": "practice-01",
+    "title": "Corporate Tax Strategy & Structuring",
+    "description": "Strategic tax planning that protects corporate value and supports sustainable business growth. Arygyle Chartered Accountants assist businesses in evaluating the tax implications of corporate structures, financing decisions, investments and commercial arrangements, with the objective of achieving lawful tax efficiency and reducing material tax exposures.",
+    "sections": [
+      {
+        "title": "Corporate Income Tax Planning",
+        "items": [
+          "Annual and multi-year corporate tax planning.",
+          "Corporate tax liability forecasting and scenario modelling.",
+          "Assessment of allowable deductions and capital allowances.",
+          "Review of tax losses and their utilisation under applicable law.",
+          "Corporate tax provision reviews and tax reconciliation advisory.",
+          "Assessment of tax implications of business expansion."
+        ]
+      },
+      {
+        "title": "Corporate Group Tax Structuring",
+        "items": [
+          "Holding company and subsidiary structure reviews.",
+          "Group reorganisation tax impact assessments.",
+          "Intra-group transaction tax advisory.",
+          "Group financing and intercompany loan tax analysis.",
+          "Corporate restructuring and business consolidation advisory.",
+          "Tax implications of transferring assets between group entities."
+        ]
+      },
+      {
+        "title": "Investment & Capital Expenditure Tax Planning",
+        "items": [
+          "Tax analysis of major capital investment programmes.",
+          "Plant, machinery and equipment tax treatment.",
+          "Capital allowance planning and asset classification.",
+          "Tax implications of infrastructure development expenditure.",
+          "Project-level tax cash-flow forecasting.",
+          "Investment incentive eligibility assessments."
+        ]
+      },
+      {
+        "title": "Corporate Financing & Profit Repatriation",
+        "items": [
+          "Debt versus equity funding tax assessments.",
+          "Interest deductibility and financing arrangement reviews.",
+          "Dividend withholding tax advisory.",
+          "Profit repatriation tax planning.",
+          "Shareholder loan tax implications.",
+          "Cross-border funding structure reviews."
+        ]
+      },
+      {
+        "title": "Business Restructuring Tax Advisory",
+        "items": [
+          "Tax implications of mergers and reorganisations.",
+          "Business transfers and asset disposals.",
+          "Corporate ownership changes.",
+          "Tax planning for distressed business restructuring.",
+          "Tax consequences of business closures and liquidations.",
+          "Post-restructuring tax compliance planning."
+        ]
+      },
+      {
+        "title": "Executive Corporate Tax Advisory",
+        "items": [
+          "Written technical tax opinions.",
+          "Board-level tax strategy presentations.",
+          "Tax impact assessments of proposed business decisions.",
+          "Annual corporate tax strategy reviews.",
+          "Tax policy change impact analysis."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "practice-02",
+    "title": "Transaction & Investment Tax Advisory",
+    "description": "Tax intelligence for acquisitions, investments, joint ventures and major commercial transactions. Arygyle Chartered Accountants provide transaction-focused tax advisory services to assist investors and corporate management in identifying tax exposures, assessing transaction structures and making informed investment decisions.",
+    "sections": [
+      {
+        "title": "Merger & Acquisition Tax Advisory",
+        "items": [
+          "Buy-side and sell-side tax due diligence.",
+          "Historical tax exposure assessments.",
+          "Tax implications of share acquisitions versus asset acquisitions.",
+          "Review of outstanding tax assessments and contingent liabilities.",
+          "Transaction tax structuring options.",
+          "Post-acquisition tax integration planning."
+        ]
+      },
+      {
+        "title": "Joint Venture & Partnership Tax Advisory",
+        "items": [
+          "Joint venture tax structure assessments.",
+          "Tax implications of profit-sharing arrangements.",
+          "Tax analysis of shareholder contributions.",
+          "Partnership and special-purpose vehicle tax considerations.",
+          "Exit and ownership transfer tax planning."
+        ]
+      },
+      {
+        "title": "Major Contract Tax Advisory",
+        "items": [
+          "Tax review of construction and infrastructure contracts.",
+          "Engineering, procurement and construction contract tax analysis.",
+          "Tax treatment of advance payments and retention amounts.",
+          "Contractor and subcontractor withholding tax assessments.",
+          "Imported services and cross-border contract tax analysis.",
+          "Tax clause reviews in coordination with legal advisers."
+        ]
+      },
+      {
+        "title": "Investment Project Tax Modelling",
+        "items": [
+          "Project tax cash-flow modelling.",
+          "Effective tax rate analysis.",
+          "Capital investment tax scenario analysis.",
+          "VAT cash-flow exposure forecasting.",
+          "Tax sensitivity analysis for major investments.",
+          "Investment incentives assessment."
+        ]
+      },
+      {
+        "title": "Property & Asset Transaction Tax Advisory",
+        "items": [
+          "Tax implications of commercial property acquisitions.",
+          "Capital gains tax considerations.",
+          "Property development tax structuring.",
+          "Asset disposal and transfer tax assessments.",
+          "Tax implications of sale-and-leaseback arrangements."
+        ]
+      },
+      {
+        "title": "Transaction Implementation & Integration",
+        "items": [
+          "Transaction tax implementation checklists.",
+          "Tax-related conditions precedent tracking.",
+          "Post-transaction registration and compliance reviews.",
+          "Acquired business tax control integration.",
+          "Transaction documentation and evidence reviews."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "practice-03",
+    "title": "VAT Strategy & Indirect Tax",
+    "description": "Protecting VAT recoverability, strengthening transaction controls and improving working-capital efficiency. VAT can materially affect the cash flow and profitability of companies undertaking large procurement, capital investment, mining, manufacturing and infrastructure activities. Arygyle Chartered Accountants provides transaction-based VAT advisory services to assist businesses in managing VAT obligations and supporting legitimate input tax claims.",
+    "sections": [
+      {
+        "title": "Corporate VAT Advisory",
+        "items": [
+          "VAT registration and deregistration assessments.",
+          "VAT treatment of business transactions.",
+          "Standard-rated, zero-rated and exempt supply analysis.",
+          "Input VAT recoverability assessments.",
+          "VAT apportionment methodology reviews.",
+          "VAT treatment of credit notes and adjustments."
+        ]
+      },
+      {
+        "title": "Mining VAT Advisory",
+        "items": [
+          "VAT treatment of mining-related purchases.",
+          "Capital equipment input VAT reviews.",
+          "Imported mining equipment VAT analysis.",
+          "Mining contractor VAT assessments.",
+          "VAT treatment of mineral sales and exports.",
+          "Mining VAT refund and cash-flow risk reviews."
+        ]
+      },
+      {
+        "title": "Construction & Infrastructure VAT Advisory",
+        "items": [
+          "VAT structuring for infrastructure contracts.",
+          "Construction progress billing VAT reviews.",
+          "VAT treatment of advance payments.",
+          "VAT implications of retention arrangements.",
+          "Subcontractor invoice compliance reviews.",
+          "Project VAT cash-flow forecasting."
+        ]
+      },
+      {
+        "title": "Imported Services & Cross-Border VAT",
+        "items": [
+          "Imported services tax applicability assessments.",
+          "Cross-border consultancy and management fee reviews.",
+          "VAT implications of international service contracts.",
+          "Export supply documentation reviews.",
+          "Cross-border transaction classification."
+        ]
+      },
+      {
+        "title": "VAT Compliance & Input Tax Assurance",
+        "items": [
+          "Input VAT schedule reviews.",
+          "Supplier tax invoice validation controls.",
+          "VAT reconciliation between accounting records and returns.",
+          "Supporting documentation assessments.",
+          "VAT return accuracy reviews.",
+          "Historical input VAT exposure assessments."
+        ]
+      },
+      {
+        "title": "Fiscalisation & Electronic Invoicing",
+        "items": [
+          "Fiscalisation compliance assessments.",
+          "FDMS integration control reviews.",
+          "Electronic tax invoice process assessments.",
+          "Supplier fiscal invoice verification procedures.",
+          "Tax invoice data integrity reviews.",
+          "Fiscalisation exception reporting."
+        ]
+      },
+      {
+        "title": "VAT Disputes & Recovery Support",
+        "items": [
+          "VAT assessment technical reviews.",
+          "Input tax disallowance analysis.",
+          "VAT refund claim documentation support.",
+          "VAT reconciliation dispute support.",
+          "Preparation of technical responses to VAT queries."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "practice-04",
+    "title": "Tax Risk, Governance & Board Reporting",
+    "description": "Transforming tax risk into measurable corporate governance and management accountability. Arygyle Chartered Accountants help organisations establish structured tax governance arrangements that support management oversight, regulatory compliance and effective decision-making.",
+    "sections": [
+      {
+        "title": "Enterprise Tax Risk Assessments",
+        "items": [
+          "Organisation-wide tax risk reviews.",
+          "Identification of material tax exposures.",
+          "Tax risk likelihood and impact assessments.",
+          "Historical tax compliance exposure reviews.",
+          "Tax risk prioritisation and remediation planning."
+        ]
+      },
+      {
+        "title": "Corporate Tax Governance Frameworks",
+        "items": [
+          "Development of corporate tax governance policies.",
+          "Tax responsibility and accountability matrices.",
+          "Tax approval and escalation procedures.",
+          "Tax compliance oversight frameworks.",
+          "Board tax governance reporting structures."
+        ]
+      },
+      {
+        "title": "Tax Internal Controls",
+        "items": [
+          "Tax control design assessments.",
+          "Tax control operating effectiveness reviews.",
+          "VAT and corporate income tax control testing.",
+          "Withholding tax and payroll tax controls.",
+          "Tax document retention procedures.",
+          "Segregation of duties and approval controls."
+        ]
+      },
+      {
+        "title": "Tax Account Reconciliation & Exposure Management",
+        "items": [
+          "ZIMRA tax account reconciliations.",
+          "General ledger to tax return reconciliations.",
+          "Unresolved tax balance investigations.",
+          "Tax provision and liability reconciliation reviews.",
+          "Historical tax adjustment assessments."
+        ]
+      },
+      {
+        "title": "ZIMRA Audit Readiness",
+        "items": [
+          "Pre-audit tax health checks.",
+          "Audit evidence readiness assessments.",
+          "Tax documentation gap reviews.",
+          "Tax risk remediation plans.",
+          "Internal mock tax audit procedures."
+        ]
+      },
+      {
+        "title": "Board & Audit Committee Reporting",
+        "items": [
+          "Quarterly tax risk dashboards.",
+          "Tax exposure heat maps.",
+          "Significant tax matter reporting.",
+          "Tax compliance performance reporting.",
+          "Corrective action progress reporting.",
+          "Annual tax governance effectiveness reviews."
+        ]
+      },
+      {
+        "title": "Tax Governance Training",
+        "items": [
+          "Tax awareness sessions for directors.",
+          "Finance department tax risk training.",
+          "VAT control workshops.",
+          "Tax governance policy implementation training.",
+          "Tax compliance accountability workshops."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "practice-05",
+    "title": "ZIMRA Audits, Assessments & Tax Controversy",
+    "description": "Technical tax support when corporate tax positions are questioned or challenged. Arygyle Chartered Accountants assists clients with the technical and administrative management of ZIMRA enquiries, audits, assessments and tax disputes, within its authorised professional scope.",
+    "sections": [
+      {
+        "title": "ZIMRA Tax Audit Support",
+        "items": [
+          "Audit notification assessments.",
+          "Audit preparation and readiness.",
+          "Coordination of requested tax information.",
+          "Review of audit findings.",
+          "Technical analysis of disputed tax treatments.",
+          "Audit issue tracking and management reporting."
+        ]
+      },
+      {
+        "title": "Tax Assessment Reviews",
+        "items": [
+          "Corporate income tax assessment reviews.",
+          "VAT assessment analysis.",
+          "PAYE and employment tax assessments.",
+          "Withholding tax assessment reviews.",
+          "Penalty and interest computation assessments.",
+          "Tax liability reconciliation."
+        ]
+      },
+      {
+        "title": "Tax Objections & Administrative Appeals Support",
+        "items": [
+          "Review of available objection grounds.",
+          "Technical objection documentation preparation.",
+          "Supporting evidence compilation.",
+          "Assessment of applicable procedural deadlines.",
+          "Administrative appeal preparation assistance within authorised scope.",
+          "Coordination with legal practitioners where necessary."
+        ]
+      },
+      {
+        "title": "VAT Dispute Advisory",
+        "items": [
+          "Input VAT rejection assessments.",
+          "VAT refund dispute reviews.",
+          "Tax invoice documentation disputes.",
+          "VAT transaction classification disputes.",
+          "VAT reconciliation and technical representation support."
+        ]
+      },
+      {
+        "title": "Tax Penalty & Interest Advisory",
+        "items": [
+          "Review of penalty calculations.",
+          "Analysis of potential grounds for relief.",
+          "Preparation of administrative representations.",
+          "Supporting evidence preparation.",
+          "Tax payment arrangement advisory."
+        ]
+      },
+      {
+        "title": "Tax Account Dispute Resolution",
+        "items": [
+          "Investigation of disputed ZIMRA balances.",
+          "Identification of unallocated tax payments.",
+          "Reconciliation of returns and assessments.",
+          "Preparation of account correction requests.",
+          "Follow-up on agreed administrative corrections."
+        ]
+      },
+      {
+        "title": "Tax Controversy Strategy",
+        "items": [
+          "Tax dispute risk assessments.",
+          "Dispute options and implications analysis.",
+          "Evidence and documentation strategies.",
+          "Management reporting on tax disputes.",
+          "Settlement options assessment where legally available."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "practice-06",
+    "title": "Cross-Border & International Tax",
+    "description": "Supporting international investment and commercial transactions through informed Zimbabwean and cross-border tax planning. Arygyle Chartered Accountants advises businesses on the Zimbabwean tax implications of international transactions and coordinates foreign-jurisdiction specialist advice where required.",
+    "sections": [
+      {
+        "title": "International Corporate Tax Advisory",
+        "items": [
+          "Zimbabwean tax implications of foreign investment.",
+          "Tax treatment of international business arrangements.",
+          "Cross-border corporate structuring assessments.",
+          "International transaction tax impact reviews.",
+          "Foreign-source income tax considerations."
+        ]
+      },
+      {
+        "title": "Withholding Tax Advisory",
+        "items": [
+          "Non-resident withholding tax assessments.",
+          "Dividend withholding tax analysis.",
+          "Interest and royalty payment tax treatment.",
+          "Cross-border service fee withholding tax reviews.",
+          "Withholding tax compliance procedures."
+        ]
+      },
+      {
+        "title": "Double Taxation Agreement Advisory",
+        "items": [
+          "Identification of potentially applicable tax treaties.",
+          "Treaty residence and eligibility assessments.",
+          "Treaty withholding tax considerations.",
+          "Beneficial ownership and substance assessments.",
+          "Documentation requirements for treaty claims."
+        ]
+      },
+      {
+        "title": "Permanent Establishment Risk",
+        "items": [
+          "Foreign contractor tax presence assessments.",
+          "Cross-border service delivery reviews.",
+          "Project-based permanent establishment analysis.",
+          "Management and operational presence risk reviews.",
+          "Permanent establishment documentation planning."
+        ]
+      },
+      {
+        "title": "Transfer Pricing Advisory",
+        "items": [
+          "Related-party transaction identification.",
+          "Transfer pricing risk assessments.",
+          "Intercompany agreement reviews.",
+          "Transfer pricing documentation readiness.",
+          "Functional analysis support.",
+          "Coordination of specialist benchmarking studies."
+        ]
+      },
+      {
+        "title": "Foreign Investment & Profit Repatriation",
+        "items": [
+          "Foreign investment structure tax assessments.",
+          "Dividend repatriation tax analysis.",
+          "Cross-border loan and financing reviews.",
+          "Management fee and royalty arrangement assessments.",
+          "Tax implications of capital withdrawals and disposals."
+        ]
+      },
+      {
+        "title": "International Contractor & Imported Services Tax",
+        "items": [
+          "Non-resident contractor tax assessments.",
+          "Imported technical services tax analysis.",
+          "International engineering and consultancy contracts.",
+          "Cross-border equipment lease tax reviews.",
+          "Foreign supplier withholding obligations."
+        ]
+      },
+      {
+        "title": "International Tax Compliance",
+        "items": [
+          "Non-resident tax registration assessments.",
+          "Cross-border payment documentation reviews.",
+          "Related-party transaction reporting support.",
+          "International tax compliance risk assessments.",
+          "Coordination of foreign tax advisers."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "practice-07",
+    "title": "Digital Tax & Tax Data Integrity",
+    "description": "Connecting tax compliance, accounting technology and reliable financial data. Arygyle Chartered Accountants assists organisations in improving the accuracy, integrity and control of tax-related data across their accounting systems and digital tax compliance processes.",
+    "sections": [
+      {
+        "title": "ZIMRA TARMS Advisory",
+        "items": [
+          "TARMS account configuration reviews.",
+          "Taxpayer master data assessments.",
+          "Tax return submission workflow reviews.",
+          "Tax account reconciliation support.",
+          "Digital tax filing process improvement.",
+          "TARMS error and exception analysis."
+        ]
+      },
+      {
+        "title": "Fiscalisation & Electronic Invoicing",
+        "items": [
+          "Fiscalisation compliance assessments.",
+          "FDMS workflow and integration reviews.",
+          "Electronic invoice validation controls.",
+          "Fiscal data reconciliation processes.",
+          "Supplier invoice verification procedures.",
+          "Fiscalisation exception monitoring."
+        ]
+      },
+      {
+        "title": "Accounting System Tax Configuration",
+        "items": [
+          "Tax code configuration reviews.",
+          "VAT classification and mapping assessments.",
+          "General ledger tax account structure reviews.",
+          "Accounting-to-tax reporting reconciliation.",
+          "Tax control specifications for accounting systems.",
+          "System change impact assessments."
+        ]
+      },
+      {
+        "title": "Tax Data Analytics",
+        "items": [
+          "Transaction-level tax data reviews.",
+          "Duplicate and inconsistent tax transaction identification.",
+          "VAT input and output reconciliation analysis.",
+          "Tax coding exception reporting.",
+          "High-risk transaction identification.",
+          "Tax exposure trend analysis."
+        ]
+      },
+      {
+        "title": "Digital Tax Controls",
+        "items": [
+          "User access and approval workflow reviews.",
+          "Tax master data change controls.",
+          "Tax record retention procedures.",
+          "Digital evidence and audit trail assessments.",
+          "Tax reporting completeness controls."
+        ]
+      },
+      {
+        "title": "Tax Process Automation Advisory",
+        "items": [
+          "Tax compliance calendar automation design.",
+          "Automated reconciliation specifications.",
+          "Tax return preparation workflow improvements.",
+          "Management dashboard requirements.",
+          "Exception reporting process design."
+        ]
+      },
+      {
+        "title": "Digital Tax Transformation",
+        "items": [
+          "Tax technology readiness assessments.",
+          "Tax process gap analysis.",
+          "System improvement prioritisation.",
+          "Tax technology implementation support.",
+          "Post-implementation tax controls reviews."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "practice-08",
+    "title": "Outsourced Tax Function & Executive Advisory",
+    "description": "Senior-level corporate tax expertise without maintaining a fully staffed internal tax department. Arygyle Chartered Accountants provides structured outsourced tax advisory and oversight services to companies requiring continuous professional support for tax strategy, governance, risk management and executive decision-making.",
+    "sections": [
+      {
+        "title": "Outsourced Corporate Tax Management",
+        "items": [
+          "Corporate tax compliance oversight.",
+          "Tax obligation monitoring.",
+          "Coordination of tax return preparation.",
+          "Tax account reconciliation oversight.",
+          "Tax risk and issue management.",
+          "Coordination of external specialist advisers."
+        ]
+      },
+      {
+        "title": "Executive Tax Partner Services",
+        "items": [
+          "Dedicated senior tax advisory relationship.",
+          "Monthly executive tax consultations.",
+          "Corporate tax strategy development.",
+          "Material transaction tax assessments.",
+          "Tax issue escalation and resolution planning.",
+          "Management tax decision support."
+        ]
+      },
+      {
+        "title": "Group Tax Management",
+        "items": [
+          "Group-wide tax compliance coordination.",
+          "Subsidiary tax risk monitoring.",
+          "Consolidated tax exposure reporting.",
+          "Group tax governance policies.",
+          "Intercompany transaction tax reviews.",
+          "Group tax strategy planning."
+        ]
+      },
+      {
+        "title": "Board-Level Tax Advisory",
+        "items": [
+          "Quarterly board tax reporting.",
+          "Audit committee tax risk briefings.",
+          "Material tax exposure analysis.",
+          "Tax governance performance assessments.",
+          "Strategic tax decision memoranda."
+        ]
+      },
+      {
+        "title": "Corporate Tax Planning & Forecasting",
+        "items": [
+          "Annual corporate tax planning.",
+          "Tax cash-flow forecasting.",
+          "Tax liability scenario modelling.",
+          "Investment tax planning.",
+          "Tax budget support.",
+          "Periodic tax strategy reviews."
+        ]
+      },
+      {
+        "title": "Tax Compliance Oversight",
+        "items": [
+          "Monitoring of agreed statutory tax deadlines.",
+          "Review of tax filing status.",
+          "Tax payment schedule monitoring.",
+          "Identification of outstanding compliance issues.",
+          "Tax documentation quality reviews.",
+          "Tax clearance status monitoring."
+        ]
+      },
+      {
+        "title": "Tax Dispute & Regulatory Engagement Oversight",
+        "items": [
+          "Coordination of ZIMRA enquiries.",
+          "Monitoring of disputed tax assessments.",
+          "Tax dispute reporting to management.",
+          "Coordination of technical responses.",
+          "Escalation of material tax risks."
+        ]
+      },
+      {
+        "title": "Finance Team Tax Capability Development",
+        "items": [
+          "Tax training needs assessments.",
+          "Finance team tax workshops.",
+          "Tax compliance procedure development.",
+          "Internal tax control guidance.",
+          "Tax knowledge transfer and coaching."
+        ]
+      }
+    ]
+  }
+]
