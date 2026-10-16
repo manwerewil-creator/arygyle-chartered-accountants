@@ -10,7 +10,7 @@ export const FIRM_DETAILS = {
     primaryPhone: '+263 777 592 952',
     whatsappNumber: '263777592952',
     secondaryPhone: '+263 717 061 148',
-    canonicalEmail: 'farai@arygylecazim.co.zw',
+    canonicalEmail: 'farai@arygyle.co.zw',
     alternateEmails: ['farai@arygyle.co.zw', 'arygylecazim@gmail.com'],
     domain: 'arygyle.co.zw',
     founded: 'February 2019',
